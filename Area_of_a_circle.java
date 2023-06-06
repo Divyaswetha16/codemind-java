@@ -1,12 +1,15 @@
-import java.util.Scanner;
-class ac{
-    public static void main(String args[]){
-        int r;
-        float a;
+import java.util.*;
+public class Area
+{
+    public static void main(String args[])
+    {
         Scanner sc=new Scanner(System.in);
+        int r;
+        float area;
+        final float pi=3.14f;
         r=sc.nextInt();
-        a=(float)(3.14*r*r);
-        System.out.println(a);
+        area=pi*r*r;
+        System.out.format("%.2f",area);
         sc.close();
     }
 }
